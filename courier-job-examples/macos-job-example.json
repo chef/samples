@@ -1,0 +1,152 @@
+{
+  "name": "CHEF-Sample-Payload",
+  "description": "To demonstrate a reboot action as a part of a simple courier job on a node",
+  "scheduleRule": "immediate",
+  "exceptionRules":[],
+  "target": {
+    "executionType": "sequential",
+    "groups":[
+      {
+        "timeoutSeconds": 240,
+        "batchSize": {
+          "type": "number",
+          "value": 1
+        },
+        "distributionMethod": "batching",
+        "successCriteria": [
+          {
+            "numRuns": { "type": "percent", "value": 100 },
+            "status": "success"
+          }
+        ],
+        "nodeListType":"nodes",
+        "nodeIdentifiers":[
+          "f5e1675f-73ce-484b-8926-3af6c78dec8d"
+
+        ]
+      }
+    ]
+  },
+  "actions": {
+    "accessMode": "agent",
+    "steps":
+    [
+      {
+        "name": "step to check last reboot time windows and linux",
+        "interpreter": {
+          "skill": {
+            "minVersion": "1.0.0"
+          },
+          "name": "chef-platform/shell-interpreter"
+        },
+        "command": {
+          "linux": [
+            "last reboot"
+          ],
+          "darwin": [
+            "last reboot"
+          ],
+          "windows": [
+            "wmic os get lastbootuptime"
+          ]
+        },
+        "inputs": {},
+        "expectedInputs": { },
+        "outputFieldRules": {
+          "last_reboot_time": {
+            "source": "stdout",
+            "sourceType": "output",
+            "extractMethod": "content",
+            "expression": "false",
+            "required": true,
+            "sensitive": false
+          }
+        },
+        "retryCount": 1,
+        "failureBehavior": {
+          "action": "retryThenFail",
+          "retryBackoffStrategy": {
+            "type": "none",
+            "delaySeconds": 1,
+            "arguments": [1,3,5]
+          }
+        },
+        "limits": {},
+        "conditions": []
+      },
+      {
+        "name": "step to  reboot  machine",
+        "interpreter": {
+          "skill": {
+            "minVersion": "1.0.0"
+          },
+          "name": "chef-platform/restart-interpreter"
+        },
+        "command": {
+          "exec": "machine_reboot",
+          "args": {
+            "time": "now"
+          }
+        },
+        "inputs": {},
+        "expectedInputs": { },
+        "outputFieldRules": {
+        },
+        "retryCount": 1,
+        "failureBehavior": {
+          "action": "retryThenFail",
+          "retryBackoffStrategy": {
+            "type": "none",
+            "delaySeconds": 1,
+            "arguments": [1,3,5]
+          }
+        },
+        "limits": {},
+        "conditions": []
+      },
+      {
+        "name": "step to check last reboot time windows and linux after restart",
+        "interpreter": {
+          "skill": {
+            "minVersion": "1.0.0"
+          },
+          "name": "chef-platform/shell-interpreter"
+        },
+        "command": {
+          "linux": [
+            "last reboot"
+          ],
+          "darwin": [
+            "last reboot"
+          ],
+          "windows": [
+            "wmic os get lastbootuptime"
+          ]
+        },
+        "inputs": {},
+        "expectedInputs": { },
+        "outputFieldRules": {
+          "new_reboot_time": {
+            "source": "stdout",
+            "sourceType": "output",
+            "extractMethod": "content",
+            "expression": "false",
+            "required": true,
+            "sensitive": false
+          }
+        },
+        "retryCount": 1,
+        "failureBehavior": {
+          "action": "retryThenFail",
+          "retryBackoffStrategy": {
+            "type": "none",
+            "delaySeconds": 1,
+            "arguments": [1,3,5]
+          }
+        },
+        "limits": {},
+        "conditions": []
+      }
+    ]
+  }
+}
