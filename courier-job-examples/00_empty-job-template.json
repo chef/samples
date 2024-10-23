@@ -1,28 +1,28 @@
 {
   "name":"<STRING>",
   "description": "<STRING>",
-  "scheduleRule": "<STRING>",
+  "scheduleRule": "immediate|RRule",
   "exceptionRules": [],
   "target": {
-    "executionType": "<ENUM>",
+    "executionType": "sequential"|"parallel",
     "groups":[
       {
         "timeoutSeconds": <INTEGER>,
         "batchSize": {
-          "type": "<ENUM>",
+          "type": "number"|"percent",
           "value": <INTEGER>
         },
-        "distributionMethod": "<ENUM>",
+        "distributionMethod": "rolling"|"batching",
         "successCriteria": [
           {
             "numRuns": {
-              "type": "<ENUM>",
+              "type": "number"|"percent",
               "value": <INTEGER>
             },
-            "status": "<ENUM>"
+            "status": "success"|"failure"
           }
         ],
-        "nodeListType": "<ENUM>",
+        "nodeListType": "filter"|"savedFilter"|"savedList"|"nodes",
         "listId": "<STRING>",
         "filterId": <INTEGER>,
         "nodeIdentifiers":["<STRING>"],
@@ -54,18 +54,18 @@
           }
         },
         "outputFieldRules": {
-          "sourceType": "<ENUM>",
+          "sourceType": "artifact"|"exitCode"|"file"|"output",
           "source": "<STRING>",
-          "extractMethod": "<ENUM>",
-          "expression": "<ENUM>",
+          "extractMethod": "regex"|"jsonPath"|"content",
+          "expression": "<STRING>",
           "required": <BOOLEAN>,
           "sensitive": <BOOLEAN>
         },
         "retryCount": <INTEGER>,
         "failureBehavior": {
-          "action": "<ENUM>",
+          "action": "retryThenFail"|"retryThenIgnore",
           "retryBackoffStrategy": {
-            "name": "<ENUM>",
+            "name": "none"|"linear"|"exponential"|"polynomial",
             "delaySeconds": <INTEGER>,
             "arguments": []
           }
@@ -79,7 +79,7 @@
           {
             "inputName": "<STRING>",
             "negate": <BOOLEAN>,
-            "operator": "<ENUM>",
+            "operator": "eq"|"gt"|"gte"|"lt"|"lte"|"matches"|"startsWith"|"endsWith"|"contains",
             "value": "<STRING>"
           }
         ]

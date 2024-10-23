@@ -6,7 +6,7 @@
         "skill": {
             "name": "courier-runner",
             "channel": "stable",
-            "value": ["1.4.1"]
+            "value": ["1.4.2"]
             }
         },
         {
@@ -22,7 +22,7 @@
         "skill": {
           "name": "shell-interpreter",
           "channel": "stable",
-          "value": ["1.0.1"]
+          "value": ["1.0.2"]
         }
       },
       {
@@ -30,7 +30,7 @@
         "skill": {
           "name": "inspec-interpreter",
           "channel": "stable",
-          "value": ["1.0.2"]
+          "value": ["1.0.3"]
         }
       },
       {
@@ -46,7 +46,7 @@
         "skill": {
           "name": "chef-client-interpreter",
           "channel": "stable",
-          "value": ["1.0.2"]
+          "value": ["1.0.3"]
         }
       }
     ]
