@@ -1,6 +1,6 @@
 {
-  "name": "infra client remote run",
-  "description": "Perform simple Chef Infra Client run using courier jobs",
+  "name": "infra client local run",
+  "description": "Perform simple Chef Infra Client run from local using courier jobs",
   "scheduleRule": "immediate",
   "exceptionRules": [],
   "target": {
@@ -37,7 +37,12 @@
           "name": "chef-platform/chef-client-interpreter"
         },
         "command": {
-          "exec": "run"
+          "exec": "run",
+          "args": {
+            "mode": "local",
+            "source": "/home/ec2-user/chef-repo/cookbooks",
+            "runlist": "nginx::default"
+          }
         },
         "inputs": {},
         "expectedInputs": { },
