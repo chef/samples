@@ -8,7 +8,10 @@
     "groups":[
       {
         "timeoutSeconds": 240,
-        "batchSize": {},
+        "batchSize": {
+           "type": "number",
+           "value": 1
+            },
         "distributionMethod": "batching",
         "successCriteria": [
           {
