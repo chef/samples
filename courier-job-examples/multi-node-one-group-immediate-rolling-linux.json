@@ -54,7 +54,7 @@
                 "failureBehavior": {
                     "action": "retryThenFail",
                     "retryBackoffStrategy": {
-                        "name": "none",
+                        "type": "none",
                         "delaySeconds": 1,
                         "arguments": []
                     }

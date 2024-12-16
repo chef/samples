@@ -1,6 +1,6 @@
 {
-  "name": "CHEF-Sample-Payload",
-  "description": "To demonstrate a reboot action as a part of a simple courier job on a node",
+  "name": "shell command with mac OS",
+  "description": "To demonstrate a reboot action as a part of a simple courier job on multiple operating systems",
   "scheduleRule": "immediate",
   "exceptionRules":[],
   "target": {
@@ -21,7 +21,7 @@
         ],
         "nodeListType":"nodes",
         "nodeIdentifiers":[
-          "f5e1675f-73ce-484b-8926-3af6c78dec8d"
+          "--NODE1--"
 
         ]
       }
