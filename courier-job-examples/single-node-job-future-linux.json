@@ -1,6 +1,6 @@
 {
     "name":"single-node-job-future-linux",
-    "description": "demonstrating a scheduled job executing once",
+    "description": "demonstrating a scheduled job executing on a specific day",
     "scheduleRule": "RRULE:FREQ=MINUTELY;COUNT=2;WKST=MO",
     "exceptionRules":[],
     "target": {

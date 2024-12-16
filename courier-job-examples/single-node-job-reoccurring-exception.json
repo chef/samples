@@ -2,7 +2,10 @@
     "name":"single-node-job-reoccurring-linux",
     "description": "demonstrating a scheduled job that runs multiple times with exceptions",
     "scheduleRule": "RRULE:FREQ=MINUTELY;COUNT=10",
-    "exceptionRules":[{"rrule": "RRULE:FREQ=MINUTELY;INTERVAL=2"}],
+    "exceptionRules":[{
+            "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=3",
+            "duration": 1
+        }],
     "target": {
         "executionType": "sequential",
         "groups":[
