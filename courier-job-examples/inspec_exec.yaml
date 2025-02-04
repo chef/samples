@@ -22,9 +22,7 @@ target:
 actions:
   accessMode: agent
   steps:
-  - minVersion: 1.0.0
-    maxVersion: 16.0.0
-    name: capture inspec value into variable
+  - name: capture inspec value into variable
     interpreter:
       skill:
         minVersion: 1.0.0
