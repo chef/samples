@@ -33,9 +33,6 @@
     "accessMode": "agent",
     "steps": [
       {
-        "minVersion": "1.0.0",
-        "maxVersion": "16.0.0",
-        "name": "inspec",
         "interpreter": {
           "skill": {
             "minVersion": "1.0.0",
