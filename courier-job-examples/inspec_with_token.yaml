@@ -27,7 +27,7 @@ actions:
     interpreter:
       skill:
         minVersion: 1.0.0
-        maxVersion: 16.0.0
+        maxVersion: 20.0.0
       name: chef-platform/inspec-interpreter
     command:
       exec: scan

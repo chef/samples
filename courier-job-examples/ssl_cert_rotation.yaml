@@ -88,6 +88,7 @@ actions:
   - interpreter:
       skill:
         minVersion: 1.0.0
+        maxVersion: 6.6.0
       name: chef-platform/shell-interpreter
     command:
       linux:
@@ -119,6 +120,7 @@ actions:
   - interpreter:
       skill:
         minVersion: 1.0.0
+        maxVersion: 6.6.0
       name: chef-platform/shell-interpreter
     command:
       linux:

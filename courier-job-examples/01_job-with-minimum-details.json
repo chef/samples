@@ -31,7 +31,8 @@
         "interpreter": {
           "name": "<STRING>",
           "skill": {
-            "minVersion": "<STRING>"
+            "minVersion": "<STRING>",
+            "maxVersion": "<STRING>"
           }
         },
         "command": {},
