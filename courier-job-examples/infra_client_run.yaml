@@ -18,7 +18,7 @@ target:
           status: success
       nodeListType: nodes
       nodeIdentifiers:
-        - "07d2898d-7789-4de6-8795-15fe3d746fdc"
+        - "--NODE1--"
 actions:
   accessMode: agent
   steps:

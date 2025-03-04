@@ -1,5 +1,5 @@
 {
-  "name": "infra client remote run vivek",
+  "name": "infra client remote run",
   "description": "Perform simple Chef Infra Client run using courier jobs",
   "scheduleRule": "immediate",
   "exceptionRules": [],
@@ -20,7 +20,7 @@
           }
         ],
         "nodeListType": "nodes",
-        "nodeIdentifiers": ["73b3cb89-b0ff-49d9-b598-7f6ccc8569ae"]
+        "nodeIdentifiers": ["--NODE1--"]
       }
     ]
   },

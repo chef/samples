@@ -1,5 +1,5 @@
 {
-  "name": "a simple job to showcase invoking Chef Infra Client vivek",
+  "name": "a simple job to showcase invoking Chef Infra Client",
   "description": "Perform simple Chef Infra Client actions using courier jobs",
   "scheduleRule": "immediate",
   "exceptionRules": [],
@@ -20,7 +20,7 @@
           }
         ],
         "nodeListType": "nodes",
-        "nodeIdentifiers": ["07d2898d-7789-4de6-8795-15fe3d746fdc"]
+        "nodeIdentifiers": ["--NODE--"]
       }
     ]
   },

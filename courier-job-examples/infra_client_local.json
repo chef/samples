@@ -1,5 +1,5 @@
 {
-  "name": "infra client local run 000000000000",
+  "name": "infra client local run",
   "description": "Perform simple Chef Infra Client run from local using courier jobs",
   "scheduleRule": "immediate",
   "exceptionRules": [],
@@ -20,7 +20,7 @@
           }
         ],
         "nodeListType": "nodes",
-        "nodeIdentifiers": ["73b3cb89-b0ff-49d9-b598-7f6ccc8569ae"]
+        "nodeIdentifiers": ["--NODE1--"]
       }
     ]
   },
@@ -40,8 +40,8 @@
           "exec": "run",
           "args": {
             "mode": "local",
-            "path": "C:\\chef\\cookbooks",
-            "runlist": "nodejs::default"
+            "path": "/home/ec2-user/chef-repo/cookbooks",
+            "runlist": "nginx::default"
           }
         },
         "inputs": {},
