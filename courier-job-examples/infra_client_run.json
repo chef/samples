@@ -5,13 +5,13 @@
   "exceptionRules": [],
   "target": {
     "executionType": "sequential",
-    "groups":[
+    "groups": [
       {
         "timeoutSeconds": 240,
         "batchSize": {
-           "type": "number",
-           "value": 1
-            },
+          "type": "number",
+          "value": 1
+        },
         "distributionMethod": "batching",
         "successCriteria": [
           {
@@ -19,23 +19,20 @@
             "status": "success"
           }
         ],
-        "nodeListType":"nodes",
-        "nodeIdentifiers":[
-          "--NODE1--"
-        ]
+        "nodeListType": "nodes",
+        "nodeIdentifiers": ["--NODE1--"]
       }
     ]
   },
   "actions": {
     "accessMode": "agent",
-    "steps":
-    [
+    "steps": [
       {
         "name": "step to pem keys",
         "interpreter": {
           "skill": {
             "minVersion": "1.0.0",
-            "maxVersion": "19"
+            "maxVersion": "20.9.99"
           },
           "name": "chef-platform/chef-client-interpreter"
         },
@@ -43,7 +40,7 @@
           "exec": "run"
         },
         "inputs": {},
-        "expectedInputs": { },
+        "expectedInputs": {},
         "outputFieldRules": {},
         "retryCount": 2,
         "failureBehavior": {
@@ -51,7 +48,7 @@
           "retryBackoffStrategy": {
             "type": "linear",
             "delaySeconds": 1,
-            "arguments": [1,3,5]
+            "arguments": [1, 3, 5]
           }
         },
         "limits": {},
