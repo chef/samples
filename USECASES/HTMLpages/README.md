@@ -1,0 +1,1 @@
+HTMLpages which will install index.html along with few other pages after running the cookbook "Install-Latest-Nginx-Cookbook"
