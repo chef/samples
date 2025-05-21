@@ -1,0 +1,1 @@
+Chef Control file to check if the "nginx" version is 1.24.0
