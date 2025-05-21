@@ -1,1 +1,0 @@
-Chef Control file to check if the "sandbox.html" is present in the directory "/home/polyfil/"
