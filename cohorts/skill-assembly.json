@@ -6,7 +6,7 @@
       "skill": {
         "name": "courier-runner",
         "channel": "stable",
-        "value": ["1.4.7"]
+        "value": ["1.4.9"]
       }
     },
     {
@@ -14,7 +14,7 @@
       "skill": {
         "channel": "stable",
         "name": "chef-gohai",
-        "value": ["1.2.4"]
+        "value": ["1.2.7"]
       }
     },
     {
