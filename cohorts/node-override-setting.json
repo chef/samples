@@ -6,7 +6,7 @@
       "settings":[
         {
           "name":"log_level",
-          "value":"debug"
+          "value":"info"
         },
         {
           "name":"log_file_path",
@@ -19,6 +19,10 @@
         {
           "name":"log_to_stdout",
           "value": false
+        },
+        {
+          "name":"poll_interval",
+          "value":"30s"
         }
       ]
     },
