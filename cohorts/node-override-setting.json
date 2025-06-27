@@ -6,7 +6,7 @@
       "settings":[
         {
           "name":"log_level",
-          "value":"debug"
+          "value":"info"
         },
         {
           "name":"log_file_path",
@@ -59,7 +59,7 @@
         },
         {
           "name":"log_level",
-          "value":"debug"
+          "value":"info"
         },
         {
           "name":"log_output",
