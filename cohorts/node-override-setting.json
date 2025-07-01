@@ -22,7 +22,7 @@
         },
         {
           "name":"poll_interval",
-          "value":"30s"
+          "value":"3600s"
         }
       ]
     },
