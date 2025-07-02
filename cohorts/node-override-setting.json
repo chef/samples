@@ -23,6 +23,18 @@
         {
           "name":"poll_interval",
           "value":"3600s"
+        },
+        {
+          "name":"max_size",
+          "value":"100MB"
+        },
+        {
+          "name":"retention_days",
+          "value":"7"
+        },
+        {
+          "name":"is_log_retention",
+          "value":"true"
         }
       ]
     },
@@ -68,6 +80,18 @@
         {
           "name":"log_output",
           "value":"file"
+        },
+        {
+          "name":"max_size",
+          "value":"100MB"
+        },
+        {
+          "name":"retention_days",
+          "value":"7"
+        },
+        {
+          "name":"is_log_retention",
+          "value":"true"
         },
         {
           "name":"queue_provider",
