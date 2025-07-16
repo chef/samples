@@ -112,7 +112,6 @@ file '/home/polyfil/sandbox.html' do
   group 'root'
   mode '0644'
   action :create
-  only_if { node['ipaddress'] == '172.31.13.182' }
 end
 
 # Restart Nginx service to apply changes
