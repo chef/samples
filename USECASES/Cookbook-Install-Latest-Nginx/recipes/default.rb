@@ -105,14 +105,6 @@ server {
   notifies :restart, 'service[nginx]', :immediately
 end
 
-# Create a sandbox HTML file only on a specific machine (IP: 172.31.13.182)
-file '/home/polyfil/sandbox.html' do
-  content '<h1>Hello, Chef!</h1>'
-  owner 'root'
-  group 'root'
-  mode '0644'
-  action :create
-end
 
 # Restart Nginx service to apply changes
 service 'nginx' do
