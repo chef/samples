@@ -54,6 +54,13 @@
   end
 end
 
+directory '/home/polyfil' do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
 # Restart Nginx to apply changes
 service 'nginx' do
   action :restart
