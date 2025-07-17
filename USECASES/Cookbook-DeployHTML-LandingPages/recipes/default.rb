@@ -54,14 +54,6 @@
   end
 end
 
-file '/home/polyfil/sandbox.html' do
-  content '<h1>This is dangerous file!</h1>'
-  owner 'root'
-  group 'root'
-  mode '0644'
-  action :create
-end
-
 # Restart Nginx to apply changes
 service 'nginx' do
   action :restart
