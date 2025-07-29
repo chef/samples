@@ -6,7 +6,7 @@
       "skill": {
         "name": "courier-runner",
         "channel": "stable",
-        "value": ["1.4.9"]
+        "value": ["1.5.1"]
       }
     },
     {
@@ -14,7 +14,7 @@
       "skill": {
         "channel": "stable",
         "name": "chef-gohai",
-        "value": ["1.2.7"]
+        "value": ["1.2.9"]
       }
     },
     {
@@ -22,7 +22,7 @@
       "skill": {
         "name": "shell-interpreter",
         "channel": "stable",
-        "value": ["1.0.5"]
+        "value": ["1.0.6"]
       }
     },
     {
@@ -30,7 +30,7 @@
       "skill": {
         "name": "inspec-interpreter",
         "channel": "stable",
-        "value": ["1.0.7"]
+        "value": ["1.0.8"]
       }
     },
     {
@@ -38,7 +38,7 @@
       "skill": {
         "name": "restart-interpreter",
         "channel": "stable",
-        "value": ["1.0.4"]
+        "value": ["1.0.5"]
       }
     },
     {
@@ -46,7 +46,7 @@
       "skill": {
         "name": "chef-client-interpreter",
         "channel": "stable",
-        "value": ["1.0.6"]
+        "value": ["18.7.3"]
       }
     }
   ]
