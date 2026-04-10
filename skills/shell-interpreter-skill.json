@@ -1,5 +1,6 @@
 {
     "name": "shell-interpreter",
+    "supportedAccessMode": "agent",
     "canister": {
         "origin": "chef-platform",
         "name": "shell-interpreter",

@@ -1,5 +1,6 @@
 {
   "name": "restart-interpreter",
+  "supportedAccessMode": "agent",
   "canister": {
     "origin": "chef-platform",
     "name": "restart-interpreter",

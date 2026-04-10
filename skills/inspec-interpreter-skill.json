@@ -1,5 +1,6 @@
 {
   "name": "inspec-interpreter",
+  "supportedAccessMode": "agent",
   "canister": {
     "origin": "chef-platform",
     "name": "inspec-interpreter",

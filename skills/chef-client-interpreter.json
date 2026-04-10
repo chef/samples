@@ -1,5 +1,6 @@
 {
   "name": "chef-client-interpreter",
+  "supportedAccessMode": "agent",
   "canister": {
     "origin": "chef-platform",
     "name": "chef-client-interpreter",

@@ -1,5 +1,6 @@
 {
     "name": "chef-gohai",
+    "supportedAccessMode": "agentless",
     "canister": {
         "origin": "chef-platform",
         "name": "chef-gohai",
