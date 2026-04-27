@@ -1,5 +1,6 @@
 {
     "name": "courier-runner",
+    "supportedAccessMode": "agent",
     "canister": {
         "name": "courier-runner",
         "origin": "chef-platform",
